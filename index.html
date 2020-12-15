@@ -27,12 +27,12 @@
       background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
       background-position:  top -560px left -330px, left 650px top 330px;
       background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
     }
-    .cardContainer{
-      margin-top: 10%;
+    .cardContainer{ 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 350px;
       height: 345px;
       background-color: white;
@@ -93,16 +93,6 @@
       font-size: .6rem;
       margin-top: 5px;
       color: gray;
-    }
-    @media (max-width: 1000px) {
-      .cardContainer{
-      margin-top: 15%;
-      }
-    }
-    @media (max-width: 700px) {
-      .cardContainer{
-      margin-top: 25%;
-      }
     }
   </style>
 </head>
